@@ -20,7 +20,7 @@ public class ScheduledService {
     
     @Scheduled(cron = "*/10 * * * * MON-FRI")// sec min heure jour mois jourDuMois
     public void cron(){
-        System.out.println("*** cron");
+        System.out.println("*** cron"); 
     }
     
     @Scheduled(fixedDelay = 2000)// 2 sec entre la FIN du précédent et début suivant
