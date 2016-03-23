@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package streaming.service;
+package jeu.service;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -18,12 +18,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class ScheduledService {
     
-    @Scheduled(cron = "*/10 * * * * MON-FRI")// sec min heure jour mois jourDuMois
+//    @Scheduled(cron = "*/10 * * * * MON-FRI")// sec min heure jour mois jourDuMois
     public void cron(){
         System.out.println("*** cron"); 
     }
     
-    @Scheduled(fixedDelay = 2000)// 2 sec entre la FIN du précédent et début suivant
+//    @Scheduled(fixedDelay = 2000)// 2 sec entre la FIN du précédent et début suivant
     public void fixedDelay() throws InterruptedException{
         System.out.println("*** fixedDelay");
     }

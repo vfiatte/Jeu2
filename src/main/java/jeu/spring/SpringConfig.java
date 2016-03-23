@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package streaming.spring;
+package jeu.spring;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -22,9 +22,9 @@ import org.springframework.transaction.PlatformTransactionManager;
 @Configuration
 //@SpringBootApplication
 //@EnableAutoConfiguration
-@ComponentScan(basePackages = "jeu2") 
-@EnableJpaRepositories(basePackages = "jeu2")
-@EnableScheduling
+@ComponentScan(basePackages = "jeu") 
+@EnableJpaRepositories(basePackages = "jeu")
+//@EnableScheduling
 public class SpringConfig {
 
     @Bean
