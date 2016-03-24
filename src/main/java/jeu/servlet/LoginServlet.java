@@ -25,27 +25,27 @@ public class LoginServlet extends AutowireServlet {
 
     @Autowired
     JoueursService joueursService;
-    
+
     @Autowired
     ConfigService config;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String login = req.getParameter("login");
+        String login = req.getParameter("loginco");
         String mdp = req.getParameter("mdp");
-
+        System.out.println("frzefzefgzefzefgezgezgezgzeez");
         Joueurs loginJoueur = joueursService.findOneByLogin(login);
 
         if (loginJoueur == null) {
             req.getRequestDispatcher("blocs/_inscription.jsp").include(req, resp);
-        } else if ((loginJoueur.getMdp().equals(mdp))) {
-            req.getSession().setAttribute("user", req.getParameter("login"));
+        }
+        else if ((loginJoueur.getMdp().equals(mdp))) {
+            req.getSession().setAttribute("user", req.getParameter("loginco"));
             req.getSession().setAttribute("userMdp", req.getParameter("mdp"));
             Joueurs j = config.recupererUtilisateur(req);
-            req.getRequestDispatcher("blocs/_contenuLoger.jsp").forward(req, resp);
-
-
+            req.getRequestDispatcher("blocs/_menuEnLigne.jsp").include(req, resp);
         }
+         
     }
 }

@@ -2,25 +2,19 @@
 <table>
     <tr>
         <td>
-            <form method="get" action="nouvellepartieservlet">
-                NOUVELLE PARTIE 
-            </form>
+            <button type="submit">Nouvelle partie</button>
         </td>
         <td>
-            <form method="get" action="listepartiesservlet">
-                PARTIES EN COURS
-            </form>
+            <button type="submit">Parties en cours</button>
         </td>
 
         <td>
             <table>
                 <tr>
-                    ${sessionScope.login}
+                    ${sessionScope.user}
                 </tr>
                 <tr>
-                <form method="get" action="">
-                    <button type="submit">Deconnexion</button>
-                </form>
+                <button onclick="logout()">Deconnexion</button>
     </tr>
 </table>
 </td>

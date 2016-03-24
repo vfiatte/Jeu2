@@ -16,13 +16,19 @@
     <body onload="init()">
         <table>
             <div class="menu">
-                MENU
-            </div>
+                
+                    MENU
+                
+            </div> 
             <div class="contenu">
-                CONTENU
+                
+                    CONTENU
+                
             </div>
             <div class="pied">
-                COPYRIGHT FIATTE 2016
+                
+                    COPYRIGHT FIATTE 2016
+                
             </div>
         </table>
     </body>

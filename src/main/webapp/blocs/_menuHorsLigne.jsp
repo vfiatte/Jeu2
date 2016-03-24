@@ -9,10 +9,10 @@
             </td>
             <td>
                     <label>LOGIN : </label>
-                    <input type="text" name="login"/>
+                    <input type="text" name="loginco"/>
                     <label>Mot de Passse : </label>
                     <input type="password" name="mdp"/>
-                    <input type="button" onclick="login()" value="Connexion"/>
+                    <button onclick="login()">Connexion</button>
             </td>
         </tr>
     </table>

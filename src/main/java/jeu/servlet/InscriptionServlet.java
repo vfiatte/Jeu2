@@ -42,12 +42,12 @@ public class InscriptionServlet extends AutowireServlet {
 
             } else {
                 req.setAttribute("mdpdifferent", "Les mots de passe ne correspondent pas");
-                req.getRequestDispatcher("_inscription.jsp").include(req, resp);
+                req.getRequestDispatcher("blocs/_inscription.jsp").include(req, resp);
             }
 
         } else {
             req.setAttribute("loginExistant", "Le login choisi existe deja");
-            req.getRequestDispatcher("_inscription.jsp").include(req, resp);
+            req.getRequestDispatcher("blocs/_inscription.jsp").include(req, resp);
 
         }
 

@@ -8,11 +8,13 @@ package jeu.service;
 import javax.servlet.http.HttpServletRequest;
 import jeu.entity.Joueurs;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author admin
  */
+@Service
 public class ConfigService {
 
     @Autowired
